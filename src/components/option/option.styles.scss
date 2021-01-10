@@ -1,0 +1,74 @@
+.option {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(225, 230, 235);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid lightgrey;
+    box-shadow: inset 0px 8px rgba(63, 55, 55, 0.1), 0px 8px #87878a;
+    cursor: pointer;
+    position: relative;
+    transition: .3s;
+}
+
+
+.option:hover {
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+
+.option:active {
+    top: 2px;
+    box-shadow: inset 0px 8px rgba(63, 55, 55, 0.1), 0px 4px #87878a;
+}
+
+.green {
+    border-color: #1e8f40;
+    box-shadow: inset 0px 8px rgba(63, 55, 55, 0.1), 0px 8px#197735;
+}
+
+.red {
+    border-color:#a62121;
+    box-shadow: inset 0px 8px rgba(63, 55, 55, 0.1), 0px 8px#8d1c1c;
+}
+
+.blue {
+    border-color:#1230c5;
+    box-shadow: inset 0px 8px rgba(63, 55, 55, 0.1), 0px 8px#0a1d80;
+}
+
+.yellow {
+    border-color:#b0bb14;
+    box-shadow: inset 0px 8px rgba(63, 55, 55, 0.1), 0px 8px#9ea811;
+}
+
+.purple {
+    border-color:#7319b0;
+    box-shadow: inset 0px 8px rgba(63, 55, 55, 0.1), 0px 8px#5f1391;
+}
+
+@media screen and (max-width: 550px) {
+
+    .option {
+        width: 80px;
+        height: 80px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .option {
+        width: 70px;
+        height: 70px;
+        border-width:  5px;
+        box-shadow: 0px 3px rgb(46, 63, 161);;
+    }
+
+    
+   
+}
+

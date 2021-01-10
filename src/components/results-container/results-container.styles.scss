@@ -1,0 +1,234 @@
+
+.results {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.result-container {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    overflow: hidden;
+
+    h1 {
+        font-size: 3rem;
+    }
+
+   
+}
+
+.results-icons {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.option-result {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(225, 230, 235);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 15px solid;
+    box-shadow: inset 0px 8px rgba(63, 55, 55, 0.1), 0px 8px #77777a;
+    cursor: pointer;
+    position: relative;
+    transition: .3s;
+    animation: pulse-animation 1s infinite;
+
+    span {
+        position: absolute;
+        bottom: -15px;
+        border-radius: 5px;
+        width: 80%;
+        height: 30px;
+        // background:rgb(60, 155, 60);
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+       
+    }
+
+   
+    
+}
+
+
+
+.transform-left {
+    transform: translateX(-150%);
+    
+}
+
+.transform-right {
+    transform: translateX(150%);
+}
+
+.transform-up {
+    transform: translateX(-250%);
+    opacity: 0;
+}
+
+.winner-container {
+    color: white;
+    margin-top: 30%;
+
+    button {
+        padding: 10px;
+        width: 170px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        background-color: transparent;
+        border: 3px solid white;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+
+// Laoder animation
+
+
+.block {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 230px;
+
+    h2 {
+        color: white;
+    }
+}
+
+
+.gear {
+    width: 70px;
+    height: 70px;
+    border-radius:10%;
+    // margin:80px auto;
+    border:5px solid #fff;
+    position:relative;
+    box-shadow: 0 10px 0 0 rgba(0, 0, 0, .1);
+}
+
+.gear:after {
+    content:"";
+    width: 80px;
+    height: 80px;
+    border-radius:100%;
+    display:block;
+    border:5px dashed #fff;
+    position:absolute;
+    top:-17px;
+    left: -24px;
+    box-shadow: inset 0px 0 0 20px #fff;
+    transform:scale(.5) rotate(0deg);
+    animation:gear 6s linear infinite;}
+
+.gear:before{
+    content:"";
+    width: 48px;
+    height: 48px;
+    border-radius:100%; 
+    display:block;
+    border:5px dashed#fff;
+    position:absolute;
+    top:26px;
+    right: -14px;
+    box-shadow: inset 0px 0 0 10px #fff;
+    transform:scale(.5) rotate(0deg);
+    animation:gear2 4s linear infinite;}
+
+@keyframes gear {
+   0%{transform:scale(.5) rotate(0deg);}
+  100%{transform:scale(.5) rotate(360deg);}
+}
+
+@keyframes gear2 {
+   0%{transform:scale(.5) rotate(0deg);}
+  100%{transform:scale(.5)  rotate(-360deg);}
+}
+
+@keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 30px rgba(0, 0, 0, 0);
+    }
+  }
+
+  //MEDIA
+  @media screen and (max-width: 700px) {
+
+    .option-result {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .block {
+        margin-top: 50px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .option-result {
+        width: 70px;
+        height: 70px;
+        border: 5px solid rgb(60, 155, 60);
+
+        span {
+            font-size: .8rem;
+            height: 25px;
+            width: 100%;
+            border-radius: 0;
+        }
+    }
+    
+    .block {
+        margin-bottom: 15px;
+    }
+
+    .result-container {
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    .gear {
+        width: 55px;
+        height: 55px;
+    }
+
+    .gear:before{
+        width: 38px;
+        height: 38px;
+        top:16px;
+        right: -12px;
+    }
+
+    .gear:after{
+        width: 60px;
+        height: 60px;
+        top:-17px;
+        left: -17px;
+    }
+
+   
+
+
+}

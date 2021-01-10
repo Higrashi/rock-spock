@@ -1,0 +1,72 @@
+.options-container {
+    margin-top: 50px;
+    height: 600px;
+    width: 600px;
+    border: 3px solid rgb(216, 214, 214);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(54, 74, 184);
+    -webkit-box-shadow: 8px 7px 35px -5px rgba(34, 60, 80, 0.6) inset;
+    -moz-box-shadow: 8px 7px 35px -5px rgba(34, 60, 80, 0.6) inset;
+    box-shadow: 8px 7px 35px -5px rgba(34, 60, 80, 0.6) inset;
+}
+
+.row {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    // border: 1px solid black;
+}
+
+.centered {
+    justify-content: center;
+}
+
+.positioned {
+    justify-content: start;
+}
+
+.loose-style {
+    background-color: rgb(184, 36, 36);
+    -webkit-box-shadow: 8px 7px 35px -5px rgba(34, 60, 80, 0.6) inset;
+    -moz-box-shadow: 8px 7px 35px -5px rgba(34, 60, 80, 0.6) inset;
+    box-shadow: 8px 7px 35px -5px rgba(34, 60, 80, 0.6) inset;
+}
+
+@media screen and (max-width: 700px) {
+
+    .options-container {
+        height: 500px;
+        width: 500px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .options-container {
+        height: 450px;
+        width: 450px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .options-container {
+        height: 320px;
+        width: 320px;
+        margin-top: 30px;
+    }
+
+}
+
+
+
+
