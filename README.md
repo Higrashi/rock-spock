@@ -1,3 +1,7 @@
+# About this appp
+
+A game inspired by popular sitcom 'The Big Bang Theory', which is a Rock-Paper-Scissors game modified by two new entities: "Lizard" and "Spock"
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
